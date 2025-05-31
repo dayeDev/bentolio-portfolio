@@ -4,15 +4,24 @@ body {
   background: #F9F1F0;
   color: #000;
 }
-.container {
+.bento-wrapper {
   max-width: 1440px;
   margin: 0 auto;
   padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 32px;
+}
+.bento {
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: #FADCD9;
+  padding: 32px 24px;
 }
 .header {
+  grid-column: 1 / span 12;
   background: #FADCD9;
-  border-radius: 20px;
-  margin-bottom: 32px;
   padding: 24px;
 }
 .nav {
@@ -35,12 +44,11 @@ body {
   text-transform: uppercase;
 }
 .intro {
+  grid-column: 1 / span 8;
+  background: #FADCD9;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #FADCD9;
-  border-radius: 20px;
-  margin-bottom: 32px;
   padding: 56px 32px;
 }
 .intro-text h1 {
@@ -55,15 +63,13 @@ body {
   border-radius: 50%;
 }
 .portrait {
+  grid-column: 9 / span 4;
   background: #fff;
-  border-radius: 20px;
-  width: 330px;
-  height: 476px;
-  margin: 0 auto 32px auto;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  height: 476px;
 }
 .portrait img {
   width: 100%;
@@ -71,12 +77,12 @@ body {
   border-radius: 20px;
 }
 .socials {
+  grid-column: 9 / span 4;
   background: #FADCD9;
-  border-radius: 20px;
-  padding: 24px 0;
-  margin-bottom: 32px;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
+  padding: 24px 0;
 }
 .social-links {
   display: flex;
@@ -91,10 +97,8 @@ body {
   text-decoration: none;
 }
 .contact {
+  grid-column: 9 / span 4;
   background: #F8AFA6;
-  border-radius: 20px;
-  padding: 32px 24px;
-  margin-bottom: 32px;
 }
 .contact-title {
   font-size: 55px;
@@ -124,10 +128,8 @@ body {
   box-shadow: 0 0 4px #F8AFA6;
 }
 .about {
+  grid-column: 1 / span 8;
   background: #FADCD9;
-  border-radius: 20px;
-  padding: 32px 24px;
-  margin-bottom: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,9 +146,8 @@ body {
   border-radius: 50%;
 }
 .work {
+  grid-column: 1 / span 8;
   background: #FADCD9;
-  border-radius: 20px;
-  padding: 32px 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;

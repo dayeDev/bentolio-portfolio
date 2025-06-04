@@ -1,5 +1,5 @@
 ## 🎨 figma - portfolio
-🔗 Link: https://github.com/dayeDev/bentolio-portfolio
+🔗 Link: https://dayedev.github.io/bentolio-portfolio/
 
 - 원본
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/a9ce078c-2a7b-487b-ae3e-ad3f4f185293" />
